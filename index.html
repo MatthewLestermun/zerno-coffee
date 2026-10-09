@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F4EDE3">
+  <title>Зерно — кофейня-пекарня</title>
+  <meta name="description" content="Кофейня-пекарня «Зерно»: свежая обжарка, выпечка каждое утро и предзаказ без очереди.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== Шапка ===================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Зерно<span>.</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#menu">Меню</a>
+        <a href="#quiz">Подобрать кофе</a>
+        <a href="#about">О нас</a>
+        <a href="#loyalty">Бонусы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="status" id="status"><i></i><span>Открыто</span></span>
+        <button class="cart-btn" id="cart-open" type="button" aria-label="Корзина">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <b class="cart-count" id="cart-count">0</b>
+        </button>
+        <button class="burger" id="burger" type="button" aria-label="Меню"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== Первый экран ===================== -->
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow reveal">Кофейня-пекарня · с 2019 года</p>
+        <h1 class="hero-title reveal">Кофе, ради которого <em>просыпаются</em></h1>
+        <p class="hero-sub reveal">Обжариваем зерно сами, печём круассаны каждое утро и знаем твой заказ наизусть.</p>
+        <div class="hero-buttons reveal">
+          <a href="#menu" class="btn btn-dark">Смотреть меню</a>
+          <a href="#menu" class="btn btn-line">Предзаказ без очереди →</a>
+        </div>
+        <div class="hero-facts reveal">
+          <div><b>12</b><span>сортов зерна</span></div>
+          <div><b>6:30</b><span>печём выпечку</span></div>
+          <div><b>4.9★</b><span>на Яндекс Картах</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="arch"><img src="img/hero.jpg" alt="Капучино с латте-артом" class="parallax" data-speed="0.06"></div>
+        <!-- Вращающийся бейдж -->
+        <div class="spin-badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="circle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+            <text><textPath href="#circle">свежая обжарка · свежая обжарка · </textPath></text>
+          </svg>
+          <span>☕</span>
+        </div>
+        <!-- Пар над чашкой -->
+        <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+    </section>
+
+    <!-- ===================== Бегущая строка ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Свежая выпечка каждое утро</span><b>✦</b>
+        <span>Обжариваем зерно сами</span><b>✦</b>
+        <span>Альтернативное молоко без доплаты по средам</span><b>✦</b>
+        <span>Предзаказ — заберёшь без очереди</span><b>✦</b>
+        <span>Свежая выпечка каждое утро</span><b>✦</b>
+        <span>Обжариваем зерно сами</span><b>✦</b>
+        <span>Альтернативное молоко без доплаты по средам</span><b>✦</b>
+        <span>Предзаказ — заберёшь без очереди</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ===================== О нас ===================== -->
+    <section class="section about container" id="about">
+      <div class="about-images">
+        <img src="img/interior.jpg" alt="Интерьер кофейни" class="about-img-1 reveal" loading="lazy">
+        <img src="img/latte-art.jpg" alt="Бариста рисует латте-арт" class="about-img-2 reveal" loading="lazy">
+      </div>
+      <div class="about-text">
+        <p class="eyebrow reveal">О нас</p>
+        <h2 class="section-title reveal">Маленькая кофейня <em>с большим</em> вниманием к деталям</h2>
+        <p class="reveal">Мы начинали с одной кофемашины и столика у окна. Сегодня у нас своя обжарка, пекарня и гости, которые приходят каждый день — не только за кофе, но и за разговором.</p>
+        <ul class="about-list reveal">
+          <li><b>01</b>Зерно из Эфиопии, Колумбии и Бразилии — обжариваем раз в неделю</li>
+          <li><b>02</b>Выпечка из сливочного масла, без маргарина и смесей</li>
+          <li><b>03</b>Бариста с чемпионатов — расскажут, почему этот кофе пахнет ягодами</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== Меню ===================== -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Меню</p>
+          <h2 class="section-title reveal">Выбирай — <em>мы приготовим</em> к твоему приходу</h2>
+        </div>
+
+        <div class="tabs reveal" id="menu-tabs">
+          <button type="button" class="active" data-tab="coffee">Кофе</button>
+          <button type="button" data-tab="pastry">Выпечка</button>
+          <button type="button" data-tab="breakfast">Завтраки</button>
+        </div>
+
+        <div class="menu-grid">
+          <div class="menu-photo reveal">
+            <img src="img/flatlay.jpg" alt="" id="menu-photo">
+            <p class="menu-photo-note" id="menu-note">Зерно этой недели — Эфиопия Иргачефф</p>
+          </div>
+          <ul class="menu-list" id="menu-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Квиз ===================== -->
+    <section class="section quiz-section" id="quiz">
+      <div class="container quiz-wrap">
+        <div class="quiz-intro">
+          <p class="eyebrow reveal">Подобрать кофе</p>
+          <h2 class="section-title reveal">Не знаешь, <em>что взять?</em></h2>
+          <p class="reveal">Ответь на три вопроса — подскажем напиток, который тебе точно зайдёт.</p>
+        </div>
+
+        <div class="quiz-card reveal" id="quiz-card">
+          <div class="quiz-progress"><i id="quiz-bar"></i></div>
+          <div id="quiz-body"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Галерея ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Атмосфера</p>
+          <h2 class="section-title reveal">Место, где <em>хочется задержаться</em></h2>
+        </div>
+        <div class="gallery">
+          <figure class="g-1 reveal"><img src="img/people.jpg" alt="Гости в кофейне" loading="lazy"><figcaption>Утро буднего дня</figcaption></figure>
+          <figure class="g-2 reveal"><img src="img/croissant.jpg" alt="Свежие круассаны" loading="lazy"><figcaption>Круассаны из печи</figcaption></figure>
+          <figure class="g-3 reveal"><img src="img/beans.jpg" alt="Кофейные зёрна" loading="lazy"><figcaption>Своя обжарка</figcaption></figure>
+          <figure class="g-4 reveal"><img src="img/breakfast.jpg" alt="Завтрак с книгой" loading="lazy"><figcaption>Завтраки до 14:00</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Бариста ===================== -->
+    <section class="section baristas-section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Команда</p>
+          <h2 class="section-title reveal">Люди за <em>стойкой</em></h2>
+        </div>
+        <div class="baristas">
+          <article class="barista reveal">
+            <img src="img/barista-1.jpg" alt="Бариста Лиза" loading="lazy">
+            <div>
+              <h3>Лиза</h3>
+              <p class="muted">Старший бариста · 6 лет за стойкой</p>
+              <blockquote>«Мой любимый — фильтр на эфиопском зерне. Пахнет черникой, честно.»</blockquote>
+            </div>
+          </article>
+          <article class="barista reveal">
+            <img src="img/barista-2.jpg" alt="Бариста Тимур" loading="lazy">
+            <div>
+              <h3>Тимур</h3>
+              <p class="muted">Обжарщик · финалист чемпионата</p>
+              <blockquote>«Флэт уайт — лучший способ понять, каким должен быть эспрессо.»</blockquote>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Карта лояльности ===================== -->
+    <section class="section loyalty-section" id="loyalty">
+      <div class="container loyalty-wrap">
+        <div>
+          <p class="eyebrow reveal">Бонусы</p>
+          <h2 class="section-title reveal">Каждый <em>седьмой</em> кофе — в подарок</h2>
+          <p class="reveal">Попробуй прямо здесь: нажимай на кружочки, как будто бариста ставит штамп.</p>
+        </div>
+
+        <div class="stamp-card reveal">
+          <div class="stamp-top">
+            <span class="logo small">Зерно<span>.</span></span>
+            <span class="muted" id="stamp-text">0 из 7</span>
+          </div>
+          <div class="stamps" id="stamps"></div>
+          <p class="stamp-hint" id="stamp-hint">Нажми на первый кружок ☝️</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Отзывы ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Отзывы</p>
+          <h2 class="section-title reveal">Что <em>говорят</em> гости</h2>
+        </div>
+        <div class="reviews">
+          <figure class="review reveal"><p>«Лучшие круассаны в городе. Прихожу к открытию, пока тёплые.»</p><figcaption>Анна · ★★★★★</figcaption></figure>
+          <figure class="review reveal"><p>«Делаю предзаказ из метро — захожу, а флэт уайт уже ждёт. Магия.»</p><figcaption>Сергей · ★★★★★</figcaption></figure>
+          <figure class="review reveal"><p>«Уютно работать с ноутбуком, розетки у каждого стола и быстрый Wi-Fi.»</p><figcaption>Катя · ★★★★★</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Контакты ===================== -->
+    <section class="section contacts" id="contacts">
+      <div class="container contacts-grid">
+        <div>
+          <p class="eyebrow reveal">Контакты</p>
+          <h2 class="section-title reveal">Заходи <em>на чашку</em></h2>
+          <p class="contacts-address reveal">ул. Примерная, 12<br>5 минут от метро</p>
+          <div class="hero-buttons reveal">
+            <a href="https://yandex.ru/maps/?text=%D0%BA%D0%BE%D1%84%D0%B5%D0%B9%D0%BD%D1%8F" target="_blank" rel="noopener" class="btn btn-dark">Построить маршрут</a>
+            <a href="tel:+70000000000" class="btn btn-line">+7 (000) 000-00-00</a>
+          </div>
+        </div>
+        <div class="hours reveal">
+          <div class="hours-status" id="hours-status"></div>
+          <ul id="hours-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="logo">Зерно<span>.</span></a>
+      <p class="muted">Концепт сайта by Matthew Lestermun · фото: Unsplash</p>
+    </div>
+  </footer>
+
+  <!-- ===================== Корзина ===================== -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" aria-label="Корзина">
+    <div class="cart-head">
+      <h2>Твой заказ</h2>
+      <button class="icon-btn" id="cart-close" type="button" aria-label="Закрыть">×</button>
+    </div>
+    <ul class="cart-list" id="cart-list"></ul>
+    <div class="cart-foot" id="cart-foot">
+      <label class="field">Заберу
+        <select class="input" id="pickup">
+          <option>через 10 минут</option>
+          <option>через 20 минут</option>
+          <option>через 30 минут</option>
+        </select>
+      </label>
+      <div class="cart-total"><span>Итого</span><b id="cart-total">0 ₽</b></div>
+      <button class="btn btn-dark btn-block" id="checkout" type="button">Оформить предзаказ</button>
+      <p class="note">Демо-версия: заказ никуда не отправляется</p>
+    </div>
+  </aside>
+
+  <!-- ===================== Заказ принят ===================== -->
+  <div class="modal" id="done">
+    <div class="modal-box">
+      <div class="cup" aria-hidden="true"><i class="cup-fill"></i></div>
+      <h2>Заказ <span id="order-number">№000</span> готовится</h2>
+      <p class="muted" id="order-text">Будет готов через 10 минут. Назови номер на кассе.</p>
+      <button class="btn btn-dark btn-block" type="button" id="done-close">Отлично</button>
+    </div>
+  </div>
+
+  <!-- Всплывашка «Добавлено» -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
