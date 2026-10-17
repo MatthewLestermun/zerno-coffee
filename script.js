@@ -8,36 +8,34 @@ const MENU = {
     photo: 'img/flatlay.jpg',
     note: 'Зерно этой недели — Эфиопия Иргачефф',
     items: [
-      { id: 'espresso', name: 'Эспрессо', desc: 'Плотный, с нотами шоколада', price: 150 },
-      { id: 'americano', name: 'Американо', desc: 'Эспрессо и горячая вода', price: 180 },
-      { id: 'filter', name: 'Фильтр-кофе', desc: 'Ягодный и лёгкий, на воронке', price: 200, tag: 'выбор бариста' },
-      { id: 'flatwhite', name: 'Флэт уайт', desc: 'Двойной эспрессо и бархатное молоко', price: 260 },
-      { id: 'cappuccino', name: 'Капучино', desc: 'Классика с плотной пенкой', price: 240 },
-      { id: 'latte', name: 'Латте', desc: 'Много молока, мягкий вкус', price: 250 },
-      { id: 'raf', name: 'Раф ванильный', desc: 'Сливки и натуральная ваниль', price: 290, tag: 'хит' },
-      { id: 'bumble', name: 'Бамбл', desc: 'Апельсиновый сок, карамель и эспрессо', price: 280 }
+      { id: 'espresso', name: 'Эспрессо', desc: 'Плотный, с нотами шоколада', price: 150, cup: 'choco', rate: 4.8 },
+      { id: 'americano', name: 'Американо', desc: 'Эспрессо и горячая вода', price: 180, cup: 'kraft', rate: 4.7 },
+      { id: 'filter', name: 'Фильтр-кофе', desc: 'Ягодный и лёгкий, на воронке', price: 200, tag: 'выбор бариста', cup: 'teal', rate: 4.9 },
+      { id: 'flatwhite', name: 'Флэт уайт', desc: 'Двойной эспрессо и бархатное молоко', price: 260, cup: 'hero', rate: 4.9 },
+      { id: 'cappuccino', name: 'Капучино', desc: '30% эспрессо, 40% молока и 30% пенки', price: 240, cup: 'cream', rate: 4.9 },
+      { id: 'latte', name: 'Латте', desc: '30% эспрессо и 70% нежного молока', price: 250, cup: 'teal', rate: 5.0 },
+      { id: 'raf', name: 'Раф ванильный', desc: 'Сливки, эспрессо и натуральная ваниль', price: 290, tag: 'хит', cup: 'choco', rate: 4.8 },
+      { id: 'bumble', name: 'Бамбл', desc: 'Апельсиновый сок, карамель и эспрессо', price: 280, cup: 'kraft', rate: 4.6 }
     ]
   },
   pastry: {
     photo: 'img/croissant.jpg',
     note: 'Печём с 6:30 — к открытию всё ещё тёплое',
     items: [
-      { id: 'croissant', name: 'Круассан классический', desc: 'Сливочное масло, 27 слоёв', price: 160, tag: 'хит' },
-      { id: 'almond', name: 'Круассан с миндалём', desc: 'Франжипан и миндальные лепестки', price: 230 },
-      { id: 'painchoc', name: 'Пан-о-шоколя', desc: 'С бельгийским шоколадом', price: 190 },
-      { id: 'cinnabon', name: 'Синнабон', desc: 'Корица и сливочный крем', price: 210 },
-      { id: 'ciabatta', name: 'Чиабатта', desc: 'На закваске, хрустящая корочка', price: 120 }
+      { id: 'croissant', name: 'Круассан', desc: 'Сливочное масло, 27 слоёв', price: 160, tag: 'хит', img: 'img/croissant.jpg', rate: 5.0 },
+      { id: 'almond', name: 'С миндалём', desc: 'Франжипан и миндальные лепестки', price: 230, img: 'img/pastries.jpg', rate: 4.8 },
+      { id: 'painchoc', name: 'Пан-о-шоколя', desc: 'С бельгийским шоколадом', price: 190, img: 'img/pastries.jpg', rate: 4.7 },
+      { id: 'ciabatta', name: 'Чиабатта', desc: 'На закваске, хрустящая корочка', price: 120, img: 'img/bread.jpg', rate: 4.8 }
     ]
   },
   breakfast: {
     photo: 'img/breakfast.jpg',
     note: 'Завтраки — каждый день до 14:00',
     items: [
-      { id: 'syrniki', name: 'Сырники', desc: 'Со сметаной и ягодным соусом', price: 340, tag: 'хит' },
-      { id: 'oatmeal', name: 'Овсянка с ягодами', desc: 'На молоке, с мёдом и орехами', price: 280 },
-      { id: 'benedict', name: 'Яйца бенедикт', desc: 'Бриошь, ветчина, голландез', price: 420 },
-      { id: 'avocado', name: 'Тост с авокадо', desc: 'Яйцо пашот и микрозелень', price: 390 },
-      { id: 'granola', name: 'Гранола', desc: 'Йогурт, домашняя гранола, фрукты', price: 300 }
+      { id: 'syrniki', name: 'Сырники', desc: 'Со сметаной и ягодным соусом', price: 340, tag: 'хит', img: 'img/breakfast.jpg', rate: 4.9 },
+      { id: 'oatmeal', name: 'Овсянка', desc: 'На молоке, с мёдом, ягодами и орехами', price: 280, img: 'img/flatlay.jpg', rate: 4.7 },
+      { id: 'avocado', name: 'Тост с авокадо', desc: 'Яйцо пашот и микрозелень', price: 390, img: 'img/bread.jpg', rate: 4.8 },
+      { id: 'granola', name: 'Гранола', desc: 'Йогурт, домашняя гранола, фрукты', price: 300, img: 'img/flatlay.jpg', rate: 4.6 }
     ]
   }
 };
@@ -233,6 +231,60 @@ doneModal.addEventListener('click', function (event) {
 // ---------- Вкладки меню ----------
 let currentTab = 'coffee';
 
+// Карточка товара: картинка «выпрыгивает» над стеклянной карточкой
+function productCard(item, index) {
+  const card = document.createElement('article');
+  card.className = 'product glass';
+  card.style.animationDelay = (index * 0.06) + 's';
+
+  const pic = document.createElement('div');
+  pic.className = 'product-pic' + (item.cup ? ' is-cup' : ' is-photo');
+  const img = document.createElement('img');
+  img.alt = item.name;
+  if (item.cup) {
+    img.dataset.cup = item.cup;
+    img.src = 'img/hero.jpg'; // запасной вариант, если 3D недоступно
+  } else {
+    img.src = item.img;
+    img.loading = 'lazy';
+  }
+  const rate = document.createElement('span');
+  rate.className = 'rate';
+  rate.textContent = item.rate.toFixed(1) + ' ★';
+  pic.append(img, rate);
+
+  const title = document.createElement('h3');
+  title.textContent = item.name;
+  const desc = document.createElement('p');
+  desc.textContent = item.desc;
+
+  const foot = document.createElement('div');
+  foot.className = 'product-foot';
+  const price = document.createElement('span');
+  price.className = 'price';
+  price.textContent = item.price + ' р.';
+  const add = document.createElement('button');
+  add.type = 'button';
+  add.className = 'add-btn';
+  add.textContent = '+';
+  add.setAttribute('aria-label', 'Добавить ' + item.name);
+  add.addEventListener('click', function () {
+    addToCart(item.id, add);
+    add.classList.add('added');
+    setTimeout(function () { add.classList.remove('added'); }, 500);
+  });
+  foot.append(price, add);
+
+  if (item.tag) {
+    const tag = document.createElement('span');
+    tag.className = 'tag';
+    tag.textContent = item.tag;
+    card.append(tag);
+  }
+  card.append(pic, title, desc, foot);
+  return card;
+}
+
 function renderMenu(tab) {
   currentTab = tab;
   const data = MENU[tab];
@@ -240,54 +292,19 @@ function renderMenu(tab) {
   document.querySelectorAll('#menu-tabs button').forEach(function (button) {
     button.classList.toggle('active', button.dataset.tab === tab);
   });
+  document.getElementById('menu-note').textContent = data.note;
 
-  // Плавная смена фото
-  const photo = document.getElementById('menu-photo');
-  photo.classList.add('swap');
-  setTimeout(function () {
-    photo.src = data.photo;
-    document.getElementById('menu-note').textContent = data.note;
-    photo.classList.remove('swap');
-  }, 250);
+  const grid = document.getElementById('menu-grid');
+  grid.innerHTML = '';
+  data.items.forEach(function (item, index) { grid.append(productCard(item, index)); });
+  if (window.CupArt) CupArt.fill(grid);
+}
 
-  const list = document.getElementById('menu-list');
-  list.innerHTML = '';
-  data.items.forEach(function (item, index) {
-    const li = document.createElement('li');
-    li.className = 'menu-item';
-    li.style.animationDelay = (index * 0.05) + 's';
-
-    const info = document.createElement('div');
-    const title = document.createElement('h3');
-    title.textContent = item.name;
-    if (item.tag) {
-      const tag = document.createElement('span');
-      tag.className = 'tag';
-      tag.textContent = item.tag;
-      title.append(tag);
-    }
-    const desc = document.createElement('p');
-    desc.textContent = item.desc;
-    info.append(title, desc);
-
-    const price = document.createElement('span');
-    price.className = 'price';
-    price.textContent = rub(item.price);
-
-    const add = document.createElement('button');
-    add.type = 'button';
-    add.className = 'add-btn';
-    add.textContent = '+';
-    add.setAttribute('aria-label', 'Добавить ' + item.name);
-    add.addEventListener('click', function () {
-      addToCart(item.id, add);
-      add.classList.add('added');
-      setTimeout(function () { add.classList.remove('added'); }, 500);
-    });
-
-    li.append(info, price, add);
-    list.append(li);
-  });
+// Популярное на первом экране
+function renderPopular() {
+  const box = document.getElementById('popular');
+  ['cappuccino', 'latte', 'raf'].forEach(function (id, i) { box.append(productCard(ITEMS[id], i)); });
+  if (window.CupArt) CupArt.fill(box);
 }
 
 document.querySelectorAll('#menu-tabs button').forEach(function (button) {
@@ -377,7 +394,9 @@ function renderResult() {
 
   const img = document.createElement('img');
   img.src = 'img/hero.jpg';
+  img.dataset.cup = ITEMS[id].cup;
   img.alt = '';
+  if (window.CupArt) setTimeout(function () { CupArt.fill(result); }, 0);
 
   const text = document.createElement('div');
   text.innerHTML = '<small class="eyebrow">Твой кофе</small><h3></h3><p></p>';
@@ -394,9 +413,10 @@ function renderResult() {
     addToCart(key, add);
     add.textContent = 'Добавлено ✓';
   });
+  add.className = 'btn btn-teal';
   const again = document.createElement('button');
   again.type = 'button';
-  again.className = 'btn btn-line';
+  again.className = 'btn btn-ghost';
   again.textContent = 'Пройти ещё раз';
   again.addEventListener('click', function () {
     answers = {};
@@ -526,24 +546,69 @@ document.querySelectorAll('.nav a').forEach(function (link) {
   link.addEventListener('click', closeMenu);
 });
 
+// ---------- Окно квиза ----------
+const quizModal = document.getElementById('quiz-modal');
+
+document.querySelectorAll('[data-quiz]').forEach(function (button) {
+  button.addEventListener('click', function () {
+    answers = {};
+    renderQuestion(0);
+    quizModal.classList.add('open');
+  });
+});
+
+quizModal.addEventListener('click', function (event) {
+  if (event.target === quizModal || event.target.closest('[data-close]')) quizModal.classList.remove('open');
+});
+
+// Кнопка «Сделать заказ» в шапке: если в корзине что-то есть — открываем её
+document.querySelector('.header-order').addEventListener('click', function (event) {
+  if (Object.keys(cart).length) {
+    event.preventDefault();
+    openCart();
+  }
+});
+
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
     closeMenu();
     closeCart();
     doneModal.classList.remove('open');
+    quizModal.classList.remove('open');
   }
 });
 
-// ---------- Шапка и параллакс при прокрутке ----------
+// ---------- Шапка, активный пункт меню и летающие зёрна ----------
 const header = document.querySelector('.header');
-const parallax = document.querySelectorAll('.parallax');
+const flyBeans = document.querySelectorAll('.fly-bean');
+const navLinks = document.querySelectorAll('.nav a');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-window.addEventListener('scroll', function () {
+function onScroll() {
   header.classList.toggle('scrolled', window.scrollY > 10);
-  parallax.forEach(function (img) {
-    img.style.transform = 'translateY(' + (-window.scrollY * Number(img.dataset.speed)) + 'px)';
+
+  // подсветка пункта меню текущего раздела
+  let current = navLinks[0];
+  navLinks.forEach(function (link) {
+    const section = document.querySelector(link.getAttribute('href'));
+    if (section && section.getBoundingClientRect().top < window.innerHeight * 0.4) current = link;
   });
-}, { passive: true });
+  navLinks.forEach(function (link) { link.classList.toggle('active', link === current); });
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
+
+// Зёрна плавают и смещаются при прокрутке с разной скоростью
+function animateBeans(time) {
+  flyBeans.forEach(function (bean, i) {
+    const speed = Number(bean.dataset.speed);
+    const float = Math.sin(time / 1000 * (0.6 + i * 0.07) + i) * 10;
+    const rect = bean.parentElement.getBoundingClientRect();
+    bean.style.transform = 'translateY(' + (rect.top * speed + float) + 'px) rotate(' + (rect.top * speed * 0.3 + i * 40) + 'deg)';
+  });
+  requestAnimationFrame(animateBeans);
+}
+if (!reduceMotion) requestAnimationFrame(animateBeans);
 
 // ---------- Появление блоков ----------
 const observer = new IntersectionObserver(function (entries) {
@@ -562,8 +627,10 @@ const observer = new IntersectionObserver(function (entries) {
 document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
 
 // ---------- Старт ----------
+renderPopular();
 renderMenu('coffee');
 renderQuestion(0);
+onScroll();
 renderStamps();
 renderHours();
 renderCart();
